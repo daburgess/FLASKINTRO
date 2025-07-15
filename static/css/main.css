@@ -1,4 +1,45 @@
-body {
+body,
+html {
   margin: 0;
   font-family: sans-serif;
+  background-color: lightblue;
+}
+
+.content {
+  /* center aligns 'content', notice this is the div class */
+  margin: 0 auto;
+  width: 400px;
+}
+
+table, /* gives text a filled border */
+td,
+th {
+  border: 1px solid #000000;
+}
+
+table {
+  /* removes border filling */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  /* row height */
+  height: 30px;
+}
+
+td {
+  /* cell alignment */
+  text-align: center;
+  padding: 5px;
+}
+
+.form {
+  /* separates text box (form class) from content */
+  margin-top: 20px;
+}
+
+#content {
+  /* stretches text box */
+  width: 79%;
 }
