@@ -1,8 +1,21 @@
+@font-face {
+  font-family: "JetBrainsMono-Regular";
+  src: local("JetBrainsMono-Regular"),
+    url("/font/JetBrainsMono-Regular.ttf") format("truetype"); /* this allows for other people to see the same font */
+}
+
 body,
 html {
   margin: 0;
-  font-family: sans-serif;
+  font-family: JetBrainsMono-Regular;
   background-color: lightblue;
+  font-weight: bold;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 20%;
 }
 
 .content {
@@ -41,5 +54,5 @@ td {
 
 #content {
   /* stretches text box */
-  width: 79%;
+  width: 78%;
 }
