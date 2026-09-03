@@ -3,9 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>My test page</title>
+    <title>Test Page</title>
   </head>
   <body>
-    <img src="" alt="My test image" />
+    <h1>MyWebsite</h1>
+    <!-- notice the Jinja sytax below -->
+    <!-- The buily-in static file route endpoint is called 'static'-->
+    <!--  static_folder parameter must be set for the line below to work properly-->
+    <img src="{{ url_for('static', filename='ChromeGoogle.png') }}" alt="Google Chrome Logo" />
+    <p> Google Chrome is the best browser for the following reasons:
+        <ul>
+          <li>Legacy</li>
+          <li>Color</li>
+          <li>You're dumb if you think otherwise</li>
+        </ul>
+
+        That is all.
+        Follow <a href="https://www.youtube.com/watch?v=Aq5WXmQQooo"> this</a> link if you want to learn more.
+    </p>
   </body>
 </html>
